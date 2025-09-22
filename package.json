@@ -1,15 +1,16 @@
 {
   "name": "yt-p-backend",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "om kumar",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "nodemon": "^3.1.10",
-    "prettier": "^3.6.2"
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5"
   }
 }
